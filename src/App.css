@@ -27,3 +27,16 @@
   justify-content: center !important;
   align-items: center !important;
 }
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.ant-card-body{
+    padding: 50px;
+    padding-bottom: 0;
+}
+.login__btn{
+    float: right;
+}
