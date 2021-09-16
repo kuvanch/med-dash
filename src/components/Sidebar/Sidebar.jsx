@@ -1,4 +1,4 @@
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons'
+import { BankOutlined, ContainerOutlined, PlusSquareOutlined,  UserSwitchOutlined } from '@ant-design/icons'
 import { Menu } from 'antd'
 import Sider from 'antd/lib/layout/Sider'
 import React from 'react'
@@ -10,17 +10,17 @@ export const Sidebar = ({collapsed}) => {
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item className='menu__item' key="1" icon={<UserOutlined />}>
-              <Link to='/hospitals'>Shifoxonalar</Link>
+            <Menu.Item className='menu__item' key="1" icon={<PlusSquareOutlined className={!collapsed ? '' : 'sidebar__icon'}/>}>
+              <Link to='/hospitals'>{!collapsed && 'Shifoxonalar'}</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-              <Link to='/news'>Yangiliklar</Link>
+            <Menu.Item key="2" icon={<ContainerOutlined className={!collapsed ? '' : 'sidebar__icon'}/>}>
+              <Link to='/news'>{!collapsed && 'Yangiliklar'}</Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
-              <Link to='/consalting'>Online Kansultasiya</Link>
+            <Menu.Item key="3" icon={<UserSwitchOutlined className={!collapsed ? '' : 'sidebar__icon'}/>}>
+              <Link to='/consalting'>{!collapsed && 'Online Konsultasiya'}</Link>
             </Menu.Item>
-            <Menu.Item key="4" icon={<UploadOutlined />}>
-              <Link to='/minister'>Vazir</Link>
+            <Menu.Item key="4" icon={<BankOutlined className={!collapsed ? '' : 'sidebar__icon'}/>}>
+              <Link to='/minister'>{!collapsed && 'Vazirlik'}</Link>
             </Menu.Item>
           </Menu>
         </Sider>
