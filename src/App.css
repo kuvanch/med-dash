@@ -40,3 +40,7 @@
 .login__btn{
     float: right;
 }
+.card__item{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
