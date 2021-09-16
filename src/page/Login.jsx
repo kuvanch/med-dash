@@ -1,7 +1,7 @@
-import { Card } from 'antd'
+import { Card, Typography } from 'antd'
 import Layout from 'antd/lib/layout/layout'
 import React, {useState} from 'react'
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
 
 const initialState = {
     username: "",
@@ -24,6 +24,7 @@ export const Login = () => {
     return (
         <Layout className='login'>
             <Card className="login__card">
+                <Typography.Title level={3} strong style={{textAlign:'center'}}>Kirish</Typography.Title>
                 <Form
                     name="basic"
                     labelCol={{

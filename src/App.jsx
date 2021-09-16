@@ -22,7 +22,7 @@ function App() {
                       <HeaderPage handleTrigger={handleTrigger} collapsed={collapsed}/>
                       <ContentPage>
                           <Switch>
-                            <Route path='/home' component={Home}/>
+                            <Route path='/' component={Home}/>
                           </Switch>
                       </ContentPage>
                     </Layout>
