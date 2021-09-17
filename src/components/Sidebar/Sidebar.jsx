@@ -8,7 +8,7 @@ export const Sidebar = ({collapsed}) => {
    
     return (
         <Sider trigger={null} collapsible collapsed={collapsed}>
-          <div className="logo" />
+          <div className="logo"/>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item className='menu__item' key="1" icon={<PlusSquareOutlined className={!collapsed ? '' : 'sidebar__icon'}/>}>
               <Link to='/hospitals'>{!collapsed && 'Shifoxonalar'}</Link>

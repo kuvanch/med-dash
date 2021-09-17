@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 import './App.css'
 import { Home } from './page/Home';
 import { Login } from './page/Login';
+import { Minster } from "./page/Minster";
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
                       <HeaderPage handleTrigger={handleTrigger} collapsed={collapsed}/>
                       <ContentPage>
                           <Switch>
-                            <Route path='/' component={Home}/>
+                            <Route path='/' exact component={Home} />
+                            <Route path='/minister'  component={Minster} />
+                             {/*<Route path='/consalting' component={Consalting}/>*/}
                           </Switch>
                       </ContentPage>
                     </Layout>

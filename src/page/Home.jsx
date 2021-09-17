@@ -3,6 +3,8 @@ import { Card, Col, Row, Typography } from 'antd'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { TableComponent } from '../components'
+
+
 export const Home = () => {
     const dataSource = [
         {
